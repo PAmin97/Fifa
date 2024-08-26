@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const PlayerInfoSchema = new mongoose.Schema({
   name: {
@@ -101,4 +101,4 @@ const PlayerInfoSchema = new mongoose.Schema({
 
 const PlayerInfoModel = mongoose.model("PlayerInfo", PlayerInfoSchema);
 
-module.exports = PlayerInfoModel;
+export default PlayerInfoModel;
