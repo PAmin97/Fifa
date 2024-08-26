@@ -99,6 +99,6 @@ const PlayerInfoSchema = new mongoose.Schema({
   },
 });
 
-const PlayerInfo = mongoose.model("PlayerInfo", PlayerInfoSchema);
+const PlayerInfoModel = mongoose.model("PlayerInfo", PlayerInfoSchema);
 
-module.exports = PlayerInfo;
+module.exports = PlayerInfoModel;
