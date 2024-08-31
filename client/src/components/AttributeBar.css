@@ -1,0 +1,45 @@
+.attribute-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  width: 100%;
+}
+
+.attribute-label {
+  width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.attribute-value {
+  width: 15%;
+  text-align: right;
+}
+
+.bar-container {
+  width: 35%;
+  background-color: #333;
+  height: 5px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.bar.green {
+  background-color: #4caf50;
+}
+
+.bar.yellow {
+  background-color: #ffeb3b;
+}
+
+.bar.red {
+  background-color: #f44336;
+}

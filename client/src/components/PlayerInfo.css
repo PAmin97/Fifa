@@ -1,0 +1,17 @@
+  .player-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .attribute {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .attr {
+    display: block;
+    font-weight: bold;
+    margin-top: 2px;
+    color: #f8c93e;
+  }

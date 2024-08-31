@@ -16,6 +16,9 @@
   
   .player-table thead {
     background-color: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
   
   .player-table th {
@@ -108,4 +111,35 @@
   .player-name img {
     margin-right: 10px;
   }
+
+  .dropdown-content {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
   
+  .card-header {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .card-player-image {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .info-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .info-column:last-child {
+    margin-right: 0;
+  }

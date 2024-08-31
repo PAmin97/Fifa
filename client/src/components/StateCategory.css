@@ -1,0 +1,49 @@
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    gap: 20px;
+  }
+  
+  /* .stat-category {
+    width: 18%;
+  } */
+  
+  .stat-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .stat-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .stat-overall {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .stat-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .stat-item:last-child {
+    margin-bottom: 0;
+  }
+  
