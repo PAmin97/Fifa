@@ -9,9 +9,9 @@
     gap: 20px;
   }
   
-  /* .stat-category {
-    width: 18%;
-  } */
+  .stat-category {
+    width: auto;
+  }
   
   .stat-header {
     display: flex;
