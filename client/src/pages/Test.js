@@ -4,6 +4,14 @@ import Card from "../components/Card";
 
 function Test() {
   const [players, setPlayers] = useState([]);
+  const [visibleDropdown, setVisibleDropdown] = useState({});
+
+  const toggleDropdown = (index) => {
+    setVisibleDropdown((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
+  };
 
   useEffect(() => {
     fetch("http://localhost:3001/info/players")
@@ -36,7 +44,13 @@ function Test() {
       </thead>
       <tbody>
         {players.map((player, index) => (
-          <Card key={index} player={player} index={index} />
+          <Card
+            key={index}
+            player={player}
+            index={index}
+            toggleDropdown={toggleDropdown}
+            visibleDropdown={visibleDropdown}
+          />
         ))}
       </tbody>
     </table>
