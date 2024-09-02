@@ -1,7 +1,14 @@
 import "./Card.css";
 import DropdownDetails from "./DropdownDetails";
+import { useNavigate } from "react-router-dom";
 
 function Card({ player, index, toggleDropdown, visibleDropdown }) {
+  const navigate = useNavigate();
+
+  const handleCountryClick = () => {
+    navigate(`/${player["NATION"]}`);
+  };
+
   return (
     <>
       <tr>
@@ -14,7 +21,7 @@ function Card({ player, index, toggleDropdown, visibleDropdown }) {
           {player["Name"]}
         </td>
         <td>
-          <button className="transparent-button">
+          <button className="transparent-button" onClick={handleCountryClick}>
             <img
               src={player["Country Flag"]}
               alt={player["NATION"]}
