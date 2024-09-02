@@ -4,6 +4,7 @@ import cors from "cors"; // set up rules between frontend and backend
 import mongoose from "mongoose"; // makes the connection to the RDBMS (MongoDB)
 
 import PlayerInfoRouter from "./routes/PlayerInfo.js";
+import CountryFilterRouter from "./routes/CountryFilter.js";
 
 // generate version of API
 const app = express();
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/info", PlayerInfoRouter);
+app.use("/info", CountryFilterRouter);
 
 // create the connection to our database on MongoDB called FifaDB
 mongoose.connect("mongodb://localhost:27017/FifaDB");
