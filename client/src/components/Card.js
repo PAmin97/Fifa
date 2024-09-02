@@ -31,16 +31,16 @@ function Card({ player, index, toggleDropdown, visibleDropdown }) {
         </td>
         <td>
           <button className="transparent-button">
-            <span className="position">{player["Position"]}</span>
-          </button>
-        </td>
-        <td>
-          <button className="transparent-button">
             <img
               src={player["Club Logo"]}
               alt={player["TEAM"]}
               className="club-logo"
             />
+          </button>
+        </td>
+        <td>
+          <button className="transparent-button">
+            <span className="position">{player["Position"]}</span>
           </button>
         </td>
         <td>
